@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest Animals Card Battler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Forest Animals Card Battler</h1>
+    <div class="scoreboard">
+      <div>You: <span id="player-score">0</span></div>
+      <div>AI: <span id="ai-score">0</span></div>
+      <div>Round: <span id="round">0</span>/<span id="max-rounds">0</span></div>
+    </div>
+    <div class="battlefield">
+      <div class="card" id="player-card">
+        <div class="card-title">Your Card</div>
+        <div class="card-content" id="player-card-content">
+          <span class="emoji">❔</span>
+          <div class="stats">
+            <div>Attack: <span id="player-attack">-</span></div>
+            <div>Defense: <span id="player-defense">-</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="ai-card">
+        <div class="card-title">AI Card</div>
+        <div class="card-content" id="ai-card-content">
+          <span class="emoji">❔</span>
+          <div class="stats">
+            <div>Attack: <span id="ai-attack">-</span></div>
+            <div>Defense: <span id="ai-defense">-</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Player hand: select a card to play -->
+    <div class="hand" id="player-hand"></div>
+    <div class="controls">
+      <button id="draw-button">Start Game</button>
+      <button id="reset-button" disabled>New Game</button>
+    </div>
+    <div class="result" id="round-result"></div>
+    <div class="log" id="game-log"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f8f5;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.battlefield {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.card {
+  border: 2px solid #555;
+  border-radius: 8px;
+  width: 45%;
+  background: #fff;
+}
+.card-title {
+  background: #555;
+  color: #fff;
+  padding: 8px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.card-content {
+  padding: 16px;
+}
+.emoji {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 8px;
+}
+.stats {
+  font-size: 16px;
+}
+.controls {
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Player hand styling */
+.hand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.hand-card {
+  border: 2px solid #555;
+  border-radius: 8px;
+  width: 80px;
+  background: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 8px;
+}
+.hand-card:hover {
+  transform: scale(1.1);
+}
+.hand-card .emoji {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 4px;
+}
+.hand-card .stats {
+  font-size: 12px;
+}
+.hand-card.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/* Highlight winning card */
+.card.winner {
+  border-color: gold !important;
+  box-shadow: 0 0 10px gold;
+}
+/* Game log styling */
+.log {
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+.log p {
+  margin: 4px 0;
+  font-size: 14px;
+}
